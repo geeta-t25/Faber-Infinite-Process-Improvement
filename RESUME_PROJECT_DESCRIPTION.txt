@@ -1,2 +1,0 @@
-OPERATIONAL PROCESS IMPROVEMENT & EFFICIENCY ANALYTICS | Python, Pandas, Excel, Power BI
-Developed a data-driven operational analytics project to identify bottlenecks, defects, waiting time, downtime and productivity gaps. Applied Lean Management, 5S, Kaizen, Six Sigma DMAIC, Pareto analysis and root-cause analysis concepts to prioritize improvement opportunities and built an interactive KPI dashboard for process and shift-level performance monitoring.
