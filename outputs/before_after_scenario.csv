@@ -1,0 +1,6 @@
+,Before,After (Scenario),Change %
+Productivity %,90.76856,99.845416,10.0
+Defect Rate %,1.06308,0.79731,-25.0
+Cycle Time (min),15.59648,14.036832,-10.0
+Waiting Time (min),10.770980000000002,7.5396860000000006,-30.0
+Downtime (min),15.71074,12.568592,-20.0

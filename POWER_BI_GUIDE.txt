@@ -1,0 +1,51 @@
+# Power BI Dashboard Guide
+
+## Import
+1. Open Power BI Desktop.
+2. Get Data -> Text/CSV -> process_data.csv.
+3. Load the table.
+
+## Suggested dashboard layout
+Top cards:
+- Average Productivity %
+- Average Defect Rate %
+- Average Cycle Time
+- Average Waiting Time
+- Average Downtime
+
+Charts:
+1. Clustered column: Productivity % by Process
+2. Bar chart: Defects by Process
+3. Line chart: Productivity % by Date
+4. Bar chart: Waiting Time by Process
+5. Donut: Actual Units by Process
+6. Slicers: Date, Process, Shift, Team, Product
+
+## DAX Measures
+
+Average Productivity =
+AVERAGE(process_data[Productivity_%])
+
+Average Defect Rate =
+AVERAGE(process_data[Defect_Rate_%])
+
+Average Cycle Time =
+AVERAGE(process_data[Cycle_Time_Min])
+
+Average Waiting Time =
+AVERAGE(process_data[Waiting_Time_Min])
+
+Average Downtime =
+AVERAGE(process_data[Downtime_Min])
+
+Total Actual Units =
+SUM(process_data[Actual_Units])
+
+Total Defects =
+SUM(process_data[Defects])
+
+Productivity Gap =
+100 - [Average Productivity]
+
+## Interview explanation
+"The dashboard converts raw process records into operational KPIs. I use it to identify bottlenecks and prioritize improvement areas. The dashboard itself does not prove causation; root-cause analysis is performed separately using tools such as 5 Why and Fishbone."
